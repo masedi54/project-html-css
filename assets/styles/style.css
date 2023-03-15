@@ -14,65 +14,63 @@ body {
 
 header {
   width: 100%;
-  background-color: #FFE6A7;
+  background-color: #6F1D1B;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  height: 8rem;
-  
+  padding: 0.7rem 2rem;
 }
 
-/*header .header-logo {
-  font-size: 1rem;
-  font-weight: 600;
+header .header-logo {
+  width: 12rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-
-}*/
-
-
-.logo{
-  margin-left:5px;
-float:left;
-  width: 90px;
+  transition: all 0.5s ease;
 }
 
-header .header-logo h1 a {
-  
-  font-family: "Lucida Console", "Courier New", monospace;
+header .header-logo:hover {
+  cursor: pointer;
+  width: 12.3rem;
+}
+
+.logo {
+  width: 45%;
+}
+
+header .header-logo a {
+  font-size: 1rem;
+  font-weight: 900;
   text-decoration: none;
   color: #99582A;
-
 }
-
 
 header .header-right ul {
   list-style: none;
   margin-left: 2rem;
-  
 }
 
 header .header-right ul li {
   margin-left: 1rem;
   display: inline;
   list-style-type: none;
-  
 }
 
 header .header-right li a {
   text-decoration: none;
   color: #fff;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 700;
   letter-spacing: 1px;
   transition: all 0.5s ease;
-  color:#6F1D1B;
-  font-size:25px;
-
+  color: #99582A;
 }
 
 header .header-right li a:hover {
-  color: #BB9457;
+  color: #FFE6A7;
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -86,8 +84,9 @@ header .bi {
 
 /* Hero */
 
-.main-hero {
+.hero-container {
   width: 100%;
+  background-color: #FFE6A7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,29 +94,65 @@ header .bi {
   padding: 6rem;
 }
 
-.main-hero h1 {
-  font-size: 6rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+.hero-container .hero-main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
 }
 
-.main-hero h1 span {
-  color: #f1c40f;
+.hero-container .hero-main .hero-content {
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-.main-hero p {
-  font-size: 2rem;
-  font-weight: lighter;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+.hero-container .hero-main .hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.main-hero img {
-  width: 25%;
-  height: 25%;
+.hero-container .hero-main .hero-content p {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.hero-container .hero-main .hero-content .hero-btn {
+  background-color: #BB9457;
+  border: none;
+  color: white;
+  margin-top: 10px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.hero-container .hero-main .hero-content .hero-btn:hover {
+  background-color: #99582A;
+  cursor: pointer;
+}
+
+.hero-container .hero-main .hero-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container .hero-main .hero-img img {
+  width: 100%;
+  height: 100%;
 }
 
 /* About */
@@ -166,19 +201,19 @@ header .bi {
 
 .main-projects .main-projects-card .card {
   width: 30%;
-  background-color: #fff;
+  background-color: #432818;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 0.8;
 }
 
 .main-projects .main-projects-card .card img {
-  width: 100%;
-  height: 100%;
+  width: 280px;
+  height: 200px;
+  background-image: cover;
   border-radius: 10px;
 }
 
@@ -188,7 +223,7 @@ header .bi {
   margin-top: 1rem;
 }
 
-.main-projects .main-projects-card .card h3{
+.main-projects .main-projects-card .card h3 {
   display: block;
   font-size: 1.17em;
   margin-top: 1em;
@@ -196,6 +231,11 @@ header .bi {
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
+  color: #fff;
+}
+
+.main-projects .main-projects-card .card p {
+  color: #fff;
 }
 
 .btn-menu {
@@ -227,7 +267,7 @@ header .bi {
 
 .main-contact {
   width: 100%;
-  background-color: #FFE6A7;
+  background-color: #BB9457;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,52 +334,73 @@ header .bi {
 
 footer {
   width: 100%;
-  background-color: #BB9457;
+  background-color: #6F1D1B;
+}
+
+footer .footer-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  
-  text-decoration: none;
-  
+  align-items: center;
+  padding: 2rem;
 }
 
-footer .footer-logo {
-  font-size: 1rem;
-  font-weight: 600;
+footer .footer-container .footer-logo {
+  width: 12rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-
-footer .footer-logo h1 a {
-  text-decoration: none;
-  color: #fff;
   transition: all 0.5s ease;
-  font-family: "Lucida Console", "Courier New", monospace;
 }
 
-
-
-footer .footer-nav ul {
-  margin-left: 2rem;
+footer .footer-container .footer-logo:hover {
+  cursor: pointer;
+  width: 12.3rem;
 }
 
-footer .footer-nav ul li {
-  margin-left: 1rem;
-  list-style-type: none;
-  line-height: 2rem;
-  text-align: center;
+.logo {
+  width: 45%;
 }
 
-footer .footer-nav li a {
+footer .footer-container .footer-logo a {
+  font-size: 1rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: #99582A;
+}
+
+footer .footer-container .footer-logo a:hover {
+  color: #fff;
+}
+
+footer .footer-container .footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-container .footer-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-container .footer-nav ul li {
+  list-style: none;
+  margin: 0 1rem;
+}
+
+footer .footer-container .footer-nav a {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
-  letter-spacing: 1px;
+  font-weight: 600;
   transition: all 0.5s ease;
 }
 
-footer .footer-nav li a:hover {
-  color: #f1c40f;
-  font-size: 1.2rem;
-  font-weight: 700;
+footer .footer-container .footer-nav a:hover {
+  color: #99582A;
 }
