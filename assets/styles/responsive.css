@@ -366,6 +366,10 @@
     width: 100%;
   }
 
+  .main-about {
+    min-height: 60vh;
+  }
+
   .main-about h1 {
     font-size: 2rem;
   }
@@ -381,7 +385,7 @@
   }
 
   .main-projects .main-projects-card .card {
-    min-width: 25vh;
+    min-width: 40vh;
     min-height: 60vh;
     margin: 0 1erm;
 
