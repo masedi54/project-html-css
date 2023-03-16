@@ -18,6 +18,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
   padding: 0.7rem 2rem;
 }
 
@@ -91,6 +94,9 @@ header .bi {
   align-items: center;
   flex-direction: column;
   padding: 6rem;
+  position: relative;
+  top: 6rem;
+  left: 0;
 }
 
 .hero-container .hero-main {
@@ -167,6 +173,7 @@ header .bi {
   align-items: center;
   flex-direction: column;
   padding: 6rem;
+  margin-top: 6rem;
 }
 
 .main-about h1 {

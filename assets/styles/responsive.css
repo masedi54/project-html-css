@@ -2,6 +2,12 @@
 
 /* responsive web min width 1201px */
 @media screen and (min-width: 1201px) {
+  .hero-container {
+    position: relative;
+    top: 6rem;
+
+  }
+
   .hero-container .hero-main {
     width: 100%;
     padding: 2rem;
@@ -339,6 +345,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  .main-about {
+    max-height: 50vh;
+  }
+
+  .main-about p {
+    overflow: auto;
+  }
+
   .main-projects .main-projects-card .card {
     min-width: 40vh;
     min-height: 60vh;
@@ -367,9 +381,10 @@
   }
 
   .main-projects .main-projects-card .card {
-    min-width: 40vh;
+    min-width: 25vh;
     min-height: 60vh;
-    margin: 0 auto;
+    margin: 0 1erm;
+
   }
 
   .main-projects .main-projects-card .card img {
@@ -408,10 +423,12 @@
     margin: 1rem;
   }
 
-  .main-projects .main-projects-card .card {
-    min-width: 20vh;
-    min-height: 60vh;
-    margin: 0 1erm;
+  .main-about {
+    max-height: 40vh;
+  }
+
+  .main-about p {
+    overflow: auto;
   }
 
   footer .footer-container {
