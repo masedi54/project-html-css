@@ -2,9 +2,37 @@
 
 /* responsive web min width 1201px */
 @media screen and (min-width: 1201px) {
+  .hero-container .hero-main {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .hero-container .hero-main .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-container .hero-main .hero-content .hero-title {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .hero-container .hero-main .hero-content .hero-message {
+    font-size: 1.5em;
+    text-align: left;
+  }
+
+  .hero-container .hero-main .hero-content .hero-btn {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+
   .main-projects .main-projects-card {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
   }
 
@@ -16,13 +44,37 @@
 
   .main-projects .main-projects-card .card img {
     width: 100%;
-    min-height: 30vh;
+    min-height: 40vh;
     border-radius: 30px;
   }
 }
 
 /* responsive web max-width */
 @media screen and (max-width: 1200px) {
+  .hero-container .hero-main {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .hero-container .hero-main .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-container .hero-main .hero-content .hero-title {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: left;
+  }
+
+  .hero-container .hero-main .hero-content .hero-message {
+    font-size: 1.5em;
+    text-align: left;
+  }
+
   .main-projects .main-projects-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -30,7 +82,7 @@
   }
 
   .main-projects .main-projects-card .card {
-    min-width: 30vh;
+    min-width: 25vh;
     min-height: 60vh;
     margin: 0 auto;
   }
@@ -94,9 +146,8 @@
   }
 
   .main-projects .main-projects-card .card {
-    min-width: 40vh;
+    min-width: 35vh;
     min-height: 60vh;
-    margin: 0 auto;
   }
 }
 
@@ -135,7 +186,6 @@
   }
 
   .hero-container .hero-main .hero-content {
-    width: 50%;
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -144,17 +194,17 @@
   }
 
   .hero-container .hero-main .hero-content .hero-title {
-    font-size: 2rem;
+    font-size: 34px;
   }
 
   .hero-container .hero-main .hero-content .hero-message {
-    font-size: 1rem;
+    font-size: 26px;
     text-align: center;
   }
 
   .hero-container .hero-main .hero-content .hero-btn {
-    font-size: 1rem;
-    padding: 1rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
     margin: 1rem;
   }
 
@@ -283,13 +333,8 @@
 }
 
 @media screen and (max-width: 480px) {
-  footer .footer-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  footer .footer-container .footer-logo {
-    margin-bottom: 4rem;
+  body {
+    width: 100%;
   }
 
   .main-about h1 {
@@ -326,4 +371,28 @@
   .main-projects .main-projects-card .card p {
     font-size: 1rem;
   }
+
+  .hero-container .hero-main .hero-content .hero-title {
+    font-size: 1.2rem;
+  }
+
+  .hero-container .hero-main .hero-content .hero-message {
+    font-size: 1rem;
+  }
+
+  .hero-container .hero-main .hero-content .hero-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+  }
+
+  footer .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .footer-container .footer-logo {
+    margin-bottom: 4rem;
+  }
+
 }

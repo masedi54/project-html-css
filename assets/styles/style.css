@@ -131,7 +131,7 @@ header .bi {
   font-size: 1rem;
   font-weight: 800;
   padding: 0.7rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -145,7 +145,7 @@ header .bi {
 }
 
 .hero-container .hero-main .hero-img {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
