@@ -203,8 +203,8 @@ header .bi {
 }
 
 .main-projects .main-projects-card .card {
-  max-width: 30%;
-  max-height: 400px;
+  min-width: 30%;
+  min-height: 60vh;
   background-color: #432818;
   padding: 1rem;
   border-radius: 10px;
