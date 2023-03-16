@@ -6,7 +6,7 @@
 
 body {
   width: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif !important;
   background: #fff;
 }
 
@@ -45,7 +45,7 @@ header .header-logo a {
   font-size: 1rem;
   font-weight: 900;
   text-decoration: none;
-  color: #99582A;
+  color: #FFE6A7;
 }
 
 header .header-right ul {
@@ -61,16 +61,15 @@ header .header-right ul li {
 
 header .header-right li a {
   text-decoration: none;
-  color: #fff;
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 1px;
   transition: all 0.5s ease;
-  color: #99582A;
+  color: #FFE6A7;
 }
 
 header .header-right li a:hover {
-  color: #FFE6A7;
+  color: #432818;
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -78,7 +77,7 @@ header .header-right li a:hover {
 header .bi {
   font-size: 2rem;
   margin-left: 1rem;
-  color: #fff;
+  color: #FFE6A7;
   display: none;
 }
 
@@ -103,20 +102,21 @@ header .bi {
 
 .hero-container .hero-main .hero-content {
   width: 75%;
+  color: #432818;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
 }
 
-.hero-container .hero-main .hero-content h1 {
+.hero-container .hero-main .hero-content .hero-title {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
 }
 
-.hero-container .hero-main .hero-content p {
+.hero-container .hero-main .hero-content .hero-message {
   font-size: 1.2rem;
   text-align: left;
 }
@@ -125,12 +125,13 @@ header .bi {
   background-color: #BB9457;
   border: none;
   color: white;
-  margin-top: 10px;
-  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 0.7rem;
+  margin: 1rem 0;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -139,7 +140,7 @@ header .bi {
 }
 
 .hero-container .hero-main .hero-content .hero-btn:hover {
-  background-color: #99582A;
+  background-color: #432818;
   cursor: pointer;
 }
 
@@ -159,7 +160,8 @@ header .bi {
 
 .main-about {
   width: 100%;
-  background-color: #f4f4f4;
+  color: #432818;
+  opacity: 0.9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,10 +184,11 @@ header .bi {
 
 .main-projects {
   width: 100%;
-  padding: 6rem;
+  padding: 0 0 6rem;
 }
 
 .main-projects h1 {
+  color: #432818;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 2rem;
@@ -194,13 +197,14 @@ header .bi {
 
 .main-projects .main-projects-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin: 2rem;
 }
 
 .main-projects .main-projects-card .card {
-  width: 30%;
+  max-width: 30%;
+  max-height: 400px;
   background-color: #432818;
   padding: 1rem;
   border-radius: 10px;
@@ -208,19 +212,22 @@ header .bi {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .main-projects .main-projects-card .card img {
-  width: 280px;
-  height: 200px;
-  background-image: cover;
-  border-radius: 10px;
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  padding: 0.7rem;
+  border-radius: 20px;
+  position: relative;
 }
 
 .main-projects .main-projects-card .card p {
   font-size: 1rem;
   text-align: center;
-  margin-top: 1rem;
 }
 
 .main-projects .main-projects-card .card h3 {
@@ -255,6 +262,11 @@ header .bi {
   -o-border-radius: 5px;
 }
 
+.btn-menu:hover {
+  background-color: #99582A;
+  cursor: pointer;
+}
+
 .main-projects .main-projects-card .card:hover {
   transform: scale(1.05);
   transition: all 0.5s ease;
@@ -282,6 +294,7 @@ header .bi {
 .main-contact .contact-container h1 {
   text-align: center;
   font-size: 2rem;
+  color: #432818;
   font-weight: bold;
   margin-bottom: 2rem;
 }
@@ -326,7 +339,7 @@ header .bi {
 }
 
 .main-contact .contact-form button:hover {
-  background-color: #404146;
+  background-color: #99582A;
   color: #fff;
 }
 
@@ -369,7 +382,7 @@ footer .footer-container .footer-logo a {
   font-size: 1rem;
   font-weight: 900;
   text-decoration: none;
-  color: #99582A;
+  color: #FFE6A7;
 }
 
 footer .footer-container .footer-logo a:hover {
@@ -393,14 +406,15 @@ footer .footer-container .footer-nav ul li {
   margin: 0 1rem;
 }
 
-footer .footer-container .footer-nav a {
+footer .footer-container .footer-nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #FFE6A7;
   font-size: 1rem;
   font-weight: 600;
   transition: all 0.5s ease;
 }
 
-footer .footer-container .footer-nav a:hover {
-  color: #99582A;
+footer .footer-container .footer-nav ul li a:hover {
+  font-size: 1.2rem;
+  font-weight: 900;
 }
